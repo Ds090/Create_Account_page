@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="./dist/Create1.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+<body class="bg-purple-500 w-full h-screen flex justify-center items-center">
+
+    <form class="bg-white bg-opacity-70 w-[300px] h-[450px] md:w-[325px] md:h-[450px] flex flex-col justify-around items-start rounded-lg shadow-lg shadow-black">
+        
+        <div class="h-auto w-auto flex flex-col justify-center gap-1 pl-[40px]">
+            <div></div><h1 class="text-xl font-bold">Create Account</h1><div></div>
+            <label class="font-semibold">Username</label>
+            <input type= "text" placeholder="codind_dev"  class="w-[230px] h-[32px] relative bottom-1 rounded-md" id="Username">
+            <small id="message1" class=" relative font-bold "></small>
+            
+            <label class="font-semibold">Email</label>
+            <input type="email" placeholder="example@gmail.com" class="w-[230px] h-[32px] relative bottom-1 rounded-md" id="email">
+            <small id="message2" class=" relative font-bold "></small>
+
+            <label for="password" class="font-semibold">Password</label>
+            <div><input type="password" name="password" autocomplete="current-password" required=""
+                placeholder="Password" class="w-[230px] h-[32px] relative bottom-1 rounded-md" id="password">
+                <i class="far fa-eye relative right-7 bottom-1 cursor-pointer" id="togglePassword"></i>
+            </div>
+            <small id="message3" class=" relative font-bold "></small>
+
+            <label for="Conform-Password" class="font-semibold">Confirm Password</label>
+            <input type="password" placeholder="Conform Password" class="w-[230px] h-[32px] relative bottom-1 rounded-md" id="Conform-Password">
+            
+            <small id="message4" class=" relative font-bold "></small>
+
+            <input type="button" value="Submit" class=" w-[228px]  bg-purple-700 rounded-sm text-white font-semibold h-9 hover:bg-black hover:shadow-lg hover:shadow-purple-600 relative top-2 cursor-pointer " id="button" onclick="creatAccount()">
+        </div>
+
+        </div>
+        
+    </form>
+
+    <script src="./create.js"></script>
+    
+</body>
+</html>
